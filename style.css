@@ -28,6 +28,7 @@ body{
 .menu{
     width: 25px;
     cursor: pointer;
+    display: none;
 }
 nav{
     flex: 1;
@@ -127,7 +128,21 @@ button:hover {
 }
 .color-box p{
     padding: 2px;
-    font-size: 1rem;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-left: 200px;
+    text-align: center;
+}
+.add-btn img{
+    width: 45px;
+    margin-bottom: 40px;
+    size: 100px;
+}
+.add-btn{
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+
 }
 .social img{
     height: 15px;
@@ -138,6 +153,62 @@ button:hover {
 .social{
     text-align: center;
 }
-@media only screen and(max-width:700px){
-    
+@media screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background:linear-gradient(#fb5283,#ff3527);
+        position: absolute;
+        right: -10px;
+        margin-top: 85px;
+        margin-right: -10px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px;
+
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+
+    }.col-2 .controller{
+        width:77% ;
+    }
+    .color-box{
+        transform: translateX(75px);
+
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-h3{
+        font-size: 15px;
+    }
+    .add-btn{
+        margin-left: 50px;
+    }
+    .color-box p{
+        margin-right: 100px;
+        position: absolute;
+        right: -10px;
+    }
 }
