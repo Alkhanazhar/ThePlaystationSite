@@ -107,6 +107,7 @@ button:hover {
     position: relative;
     flex-basis: 60%;
     align-items: center;
+    box-sizing: border-box;
 }
 .controller{
     width: 90%;
